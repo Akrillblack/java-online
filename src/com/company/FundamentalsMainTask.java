@@ -1,7 +1,5 @@
 package com.company;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -14,6 +12,7 @@ public class FundamentalsMainTask {
         System.out.println("Hello " + name);
         scanner.close();
     }
+
     // 2.     Отобразить в окне консоли аргументы командной строки в обратном порядке.
     public static void MainTask2(){
         Scanner scanner = new Scanner(System.in);
@@ -23,6 +22,7 @@ public class FundamentalsMainTask {
         System.out.println("Your reversed line is: " + buffer);
         scanner.close();
     }
+
     // 3.     Вывести заданное количество случайных чисел с переходом и без перехода на новую строку
     public static void MainTask3(){
         final Random RANDOM = new Random();
@@ -30,10 +30,14 @@ public class FundamentalsMainTask {
         System.out.println("Enter quantity of random numbers: ");
         Scanner scanner = new Scanner(System.in);
         n = scanner.nextInt();
+
+        // Filling array with random numbers
         int[] randomArr = new int[n];
         for (int i = 0; i < n; i++){
             randomArr[i] = RANDOM.nextInt();
         }
+
+        // Printing numbers according the task
         System.out.println("----- Print from new line: -----");
         for (int i :randomArr){
            System.out.println(i);
@@ -44,6 +48,7 @@ public class FundamentalsMainTask {
         }
         scanner.close();
     }
+
     // 4.     Ввести целые числа как аргументы командной строки, подсчитать их сумму (произведение) и вывести результат на консоль.
     public static void MainTask4(){
         int a, b;
@@ -56,6 +61,7 @@ public class FundamentalsMainTask {
         System.out.println("The product of a and b is: " + (a * b));
         scanner.close();
     }
+
     // 5.   Ввести число от 1 до 12. Вывести на консоль название месяца, соответствующего данному числу. Осуществить проверку корректности ввода чисел.
     // Проверка вынесена в отсутсвующий кейс, для упрощения кода.
     public static void MainTask5(){
