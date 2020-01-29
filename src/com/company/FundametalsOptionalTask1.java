@@ -101,18 +101,18 @@ public class FundametalsOptionalTask1 {
     }
 
     // 4. Найти число, в котором количество различных цифр минимально. Если таких чисел несколько, найти первое из них.
-    public static void OptionalTask4(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter the quantity of comparable numbers: ");
-        int n = scanner.nextInt();
-        Integer[] arr = new Integer[n];
-
-        // Filling array with numbers
-        for (int i = 0; i < arr.length; i++){
-            arr[i] = scanner.nextInt();
-        }
-
-
-    }
+//    public static void OptionalTask4(){
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter the quantity of comparable numbers: ");
+//        int n = scanner.nextInt();
+//        Integer[] arr = new Integer[n];
+//
+//        // Filling array with numbers
+//        for (int i = 0; i < arr.length; i++){
+//            arr[i] = scanner.nextInt();
+//        }
+//
+//
+//    }
 
 }
