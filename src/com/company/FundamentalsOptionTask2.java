@@ -6,6 +6,8 @@ import java.util.Scanner;
 //    Задание. Ввести с консоли n - размерность матрицы a [n] [n].
 //    Задать значения элементов матрицы в интервале значений от -M до M
 //    с помощью генератора случайных чисел (класс Random)
+// 2. Найти и вывести наибольшее число возрастающих (убывающих) элементов матрицы, идущих подряд.
+
 
 public class FundamentalsOptionTask2 {
 
@@ -19,9 +21,9 @@ public class FundamentalsOptionTask2 {
         System.out.println("Enter the range of random numbers: ");
         int range = scanner.nextInt();
 
-        for (int i = 0; i < matrix.length; i++){
-            for (int j = 0; j < matrix[i].length; j++){
-                matrix[i][j] = (random.nextInt((range * 2)+1)) - range;
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                matrix[i][j] = (random.nextInt((range * 2) + 1)) - range;
             }
         }
         for (int[] array : matrix) {
@@ -31,14 +33,20 @@ public class FundamentalsOptionTask2 {
             System.out.println();
         }
         scanner.close();
+        int count = 0;
+        for (int i = 0; i < matrix.length; i++){
+            for(int j = 0; j < matrix[i].length; j++){
+                int temp = matrix[i][j];
+                if (temp <= matrix[i][j]){
+                    count ++;
+
+                }
+            }
+            System.out.println(count);
+
+
     }
-
-    // 2.     Найти и вывести наибольшее число возрастающих (убывающих) элементов матрицы, идущих подряд.
-    public static void countIncreaseOptional2(){
-        FundamentalsOptionTask2.fillMatrix();
-
-
-    }
+}
 
 }
 
